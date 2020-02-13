@@ -106,18 +106,19 @@ export default function Timer() {
           <strong>{currentTimer}</strong>
         </div>
         <div id="time-left">{formatedTime()}</div>
-        <div style={{ fontSize: 25, marginTop: 15 }}>
+        <div id="sub-label">
           Are you <strong>Ready</strong>?
         </div>
-        <div style={{ marginTop: 10 }}>
+        <div id="timer">
           <Circle
             percent={percentage}
             strokeWidth="10"
             trailWidth="10"
             trailColor="#54C8E0"
             strokeColor="#FFFFFF"
+            id="progress"
           />
-          <div style={{ padding: 10 }}>
+          <div id="actions">
             <button
               id="start_stop"
               onClick={() => setActive(active => !active)}

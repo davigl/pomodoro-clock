@@ -8,7 +8,8 @@ import {
 
 const INITIAL_STATE = {
   break: 5,
-  session: 25
+  session: 25,
+  visible: false
 };
 
 const settingsReducer = (state = INITIAL_STATE, action) => {
