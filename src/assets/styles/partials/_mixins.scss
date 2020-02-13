@@ -1,0 +1,16 @@
+@mixin button() {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: "#fff";
+  border-style: none;
+  color: #FF2C65;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 7px 7px 3px rgba(0,0,0,0.31);
+  -moz-box-shadow: 0px 7px 7px 3px rgba(0,0,0,0.31);
+  box-shadow: 0px 7px 7px 3px rgba(0,0,0,0.31);
+  margin-left: 10px;
+  margin-right: 10px;
+}
