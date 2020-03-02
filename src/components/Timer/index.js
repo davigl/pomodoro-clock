@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { resetBoth } from "../../actions/settings";
 import { Circle } from "rc-progress";
 
+import ringing from "../../assets/audios/ring.mp3";
 import "./styles.scss";
 
 export default function Timer() {
@@ -136,7 +137,7 @@ export default function Timer() {
           </div>
         </div>
       </div>
-      <audio id="beep" src="https://goo.gl/65cBl1" ref={beep}></audio>
+      <audio id="beep" src={ringing} ref={beep}></audio>
     </div>
   );
 }
