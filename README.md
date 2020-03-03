@@ -3,7 +3,7 @@ Front End Libraries Projects - Build a Pomodoro Clock
 </h1>
 
 <h2>
-How does it looks?? :thinking:
+How does it looks? :thinking:
 </h2>
 
 <div align="center">
