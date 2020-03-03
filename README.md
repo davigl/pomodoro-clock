@@ -1,5 +1,5 @@
 <h1 align="center">
-Front End Libraries Projects - Build a Pomodoro Clock
+React Pomodoro Clock
 </h1>
 
 <h2>
