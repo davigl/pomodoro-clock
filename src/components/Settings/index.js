@@ -10,7 +10,7 @@ import {
 
 import "./styles.scss";
 
-export default function Settings() {
+export default function Settings({ active }) {
   const dispatch = useDispatch();
   const options = useSelector(state => {
     return state.settings;
@@ -27,6 +27,36 @@ export default function Settings() {
       currentModal.setAttribute("hidden", true);
     }
   };
+
+  const increment = (type) => {
+    if (!active) {
+      switch (type) {
+        case 'session':
+          incrementSession(dispatch);
+          break;
+        case 'break':
+          incrementBreak(dispatch)
+          break;
+        default:
+          break;
+      }
+    }
+  } 
+
+  const decrement = (type) => {
+    if (!active) {
+      switch (type) {
+        case 'session':
+          decrementSession(dispatch);
+          break;
+        case 'break':
+          decrementBreak(dispatch)
+          break;
+        default:
+          break;
+      }
+    }
+  }
 
   return (
     <div>
@@ -52,14 +82,14 @@ export default function Settings() {
             Session Length
           </label>
           <button
-            onClick={() => incrementSession(dispatch)}
+            onClick={() => increment('session')}
             className="action-button"
             id="session-increment"
           >
             +
           </button>
           <button
-            onClick={() => decrementSession(dispatch)}
+            onClick={() => decrement('session')}
             className="action-button"
             id="session-decrement"
           >
@@ -75,14 +105,14 @@ export default function Settings() {
           </label>
 
           <button
-            onClick={() => incrementBreak(dispatch)}
+            onClick={() =>  increment('break')}
             id="break-increment"
             className="action-button"
           >
             +
           </button>
           <button
-            onClick={() => decrementBreak(dispatch)}
+            onClick={() => decrement('break')}
             id="break-decrement"
             className="action-button"
           >

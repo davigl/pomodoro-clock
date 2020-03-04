@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { resetBoth } from "../../actions/settings";
 import { Circle } from "rc-progress";
 
+import Settings from "../Settings";
+
 import ringing from "../../assets/audios/ring.mp3";
 import "./styles.scss";
 
@@ -18,17 +20,15 @@ export default function Timer() {
   const [active, setActive] = useState(false);
   const [unitPercent, setUnitPercent] = useState(0);
   const [currentTimer, setCurrentTimer] = useState("Session");
+  const [formatedTime, setFormatedTime] = useState("");
 
-  const formatedTime = () => {
-    let { session } = options;
-    let current = active ? minutes : session;
-
-    let output = `${current < 10 ? `0${current}` : current}:${
+  const formatTime = (minutes, seconds) => {
+    let output = `${minutes < 10 ? `0${minutes}` : minutes}:${
       seconds < 10 ? `0${seconds}` : seconds
     }`;
 
     return output;
-  };
+  }
 
   const resetPercentage = parameter => {
     setPercentage(0);
@@ -41,9 +41,9 @@ export default function Timer() {
 
     setCurrentTimer("Session");
     setActive(false);
-    setSeconds(0);
-
     resetBoth(dispatch);
+
+    setFormatedTime(formatTime(options.session, 0)); 
   };
 
   useEffect(() => {
@@ -51,13 +51,17 @@ export default function Timer() {
 
     setMinutes(session);
     setSeconds(0);
+    setFormatedTime(formatTime(minutes, seconds));  
     setActive(false);
     resetPercentage(session);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [options]);
 
   useEffect(() => {
     let sessionTime = options.session;
     let breakTime = options.break;
+    
+    setFormatedTime(formatTime(minutes, seconds));  
 
     const adjustTimer = interval => {
       if (seconds > 0) {
@@ -106,7 +110,7 @@ export default function Timer() {
         <div id="timer-label">
           <strong>{currentTimer}</strong>
         </div>
-        <div id="time-left">{formatedTime()}</div>
+        <div id="time-left">{formatedTime}</div>
         <div id="sub-label">
           Are you <strong>Ready</strong>?
         </div>
@@ -138,6 +142,7 @@ export default function Timer() {
         </div>
       </div>
       <audio id="beep" src={ringing} ref={beep}></audio>
+      <Settings active={active} />
     </div>
   );
 }

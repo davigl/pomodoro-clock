@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Provider } from "react-redux";
-import Settings from "./components/Settings";
 import Timer from "./components/Timer";
 
 import store from "./store";
@@ -16,7 +15,6 @@ function App() {
   return (
     <Provider store={store}>
       <Timer />
-      <Settings />
     </Provider>
   );
 }
