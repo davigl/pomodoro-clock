@@ -1,6 +1,6 @@
 ## :hourglass: React Pomodoro Clock
 
-Pomodoro Clock is a flexible and easy to use online Pomodoro Technique Timer. This technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks.
+Pomodoro Clock is a flexible and easy to use online Pomodoro Technique Timer. This technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Visit the project by clicking [here](https://eudavi-pomodoro-clock.netlify.com/).
 
 ### How does it looks? :thinking:
 
