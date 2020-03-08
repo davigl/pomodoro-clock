@@ -1,5 +1,5 @@
 <h1 align="center">
-  ⌛️ React React Pomodoro Clock
+  <img alt="⌛️ React React Pomodoro Clock" src="https://i.imgur.com/F69ZcNF.png" />
   <br>
 </h1>
 
