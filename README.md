@@ -1,8 +1,35 @@
-## :hourglass: React Pomodoro Clock
+<h1 align="center">
+  <img alt="⌛️ React React Pomodoro Clock" src="https://i.imgur.com/3JGmXWy.png" />
+  <br>
+</h1>
 
-Pomodoro Clock is a flexible and easy to use online Pomodoro Technique Timer. This technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Visit the project by clicking [here](https://eudavi-pomodoro-clock.netlify.com/).
+<p align="center">
+  <a href="https://github.com/Davigl/pomodoro-clock/commits/master">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Davigl/pomodoro-clock?style=flat-square&color=ff69b4">
+  </a>
+  
+  <a href="https://github.com/Davigl/pomodoro-clock/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/Davigl/pomodoro-clock?style=flat-square&color=9cf">
+  </a>
 
-### How does it looks? :thinking:
+  <a href="https://github.com/Davigl/pomodoro-clock/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/Davigl/pomodoro-clock?style=flat-square&color=yellow">
+  </a>
+  
+  <img alt="GitHub top Language" src="https://img.shields.io/github/languages/top/davigl/pomodoro-clock.svg?style=flat-square">
+
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/Davigl/pomodoro-clock?style=flat-square&color=blueviolet">
+</p>
+
+<p align="center">
+  <a href="#thinking-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#user-content--user-stories">Stories</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
+
+## :thinking: About
+
+Pomodoro Clock is a flexible and easy to use online Pomodoro Technique Timer. This technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Visit the project by clicking [here](https://eudavi-pomodoro-timer.netlify.com/).
 
 <div align="center">
 
@@ -12,7 +39,7 @@ Pomodoro Clock is a flexible and easy to use online Pomodoro Technique Timer. Th
 
 </div>
 
-### User Stories 🦹‍
+## 🦹‍ User Stories 
 
 - [x] <strong>User Story #1:</strong> I can see an element with <code>id="break-label"</code> that contains a string (e.g. "Break Length").   
 - [x] <strong>User Story #2:</strong> I can see an element with <code>id="session-label"</code> that contains a string (e.g. "Session Length").   
@@ -43,6 +70,6 @@ Pomodoro Clock is a flexible and easy to use online Pomodoro Technique Timer. Th
 - [x] <strong>User Story #27:</strong> The audio element with <code>id="beep"</code> must be 1 second or longer.   
 - [x] <strong>User Story #28:</strong> The audio element with id of <code>beep</code> must stop playing and be rewound to the beginning when the element with the id of <code>reset</code> is clicked.   
 
-### License
+## :memo: License
 
 Copyright © 2020, [Davi Guimarães](https://github.com/davigl).
