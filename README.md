@@ -4,21 +4,21 @@
 </h1>
 
 <p align="center">
-  <a href="https://github.com/Davigl/pomodoro-clock/commits/master">
-    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Davigl/pomodoro-clock?style=flat-square&color=ff69b4">
+  <a href="https://github.com/Davigl/pwa-pomodoro-clock/commits/master">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Davigl/pwa-pomodoro-clock?style=flat-square&color=ff69b4">
   </a>
   
-  <a href="https://github.com/Davigl/pomodoro-clock/stargazers">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/Davigl/pomodoro-clock?style=flat-square&color=9cf">
+  <a href="https://github.com/Davigl/pwa-pomodoro-clock/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/Davigl/pwa-pomodoro-clock?style=flat-square&color=9cf">
   </a>
 
-  <a href="https://github.com/Davigl/pomodoro-clock/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Davigl/pomodoro-clock?style=flat-square&color=yellow">
+  <a href="https://github.com/Davigl/pwa-pomodoro-clock/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/Davigl/pwa-pomodoro-clock?style=flat-square&color=yellow">
   </a>
   
-  <img alt="GitHub top Language" src="https://img.shields.io/github/languages/top/davigl/pomodoro-clock.svg?style=flat-square">
+  <img alt="GitHub top Language" src="https://img.shields.io/github/languages/top/davigl/pwa-pomodoro-clock.svg?style=flat-square">
 
-  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/Davigl/pomodoro-clock?style=flat-square&color=blueviolet">
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/Davigl/pwa-pomodoro-clock?style=flat-square&color=blueviolet">
 </p>
 
 <p align="center">
